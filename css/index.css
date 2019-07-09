@@ -1,0 +1,168 @@
+@import 'reset.css';
+
+/* 拷贝项目下面生成的 @font-face */
+/* 引入字体文件，为了兼容性 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');/*只针对IE*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),/*网页字体*/
+        url('../font/iconfont.woff') format('woff'),/*网页字体*/
+        url('../font/iconfont.ttf') format('truetype'),/*系统中最常见的字体*/
+        url('../font/iconfont.svg#iconfont') format('svg');/*SVG图形技术*/
+        /* Format:让浏览器加载前看是否认识这个字体，内容：为了性能的优化，很重要。 */
+  }
+
+  /* 定义使用 iconfont 的样式 */
+  .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;/*让字体进行抗锯齿的渲染，看起来更清楚*/
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 头部信息 */
+#headMessage li{
+    float:left;
+    line-height: 35px;
+    padding: 0 6px;
+    font-size: 0;/*解决两个li中间的空格,设置父级字体大小为0，子级为12px*/
+}
+#headMessage a{
+    color: #6c6c6c;
+    font-size: 12px;
+}
+#headMessage a:hover{
+    color: #f40;
+}
+#headMessage a.login{
+    color: #f22e00;
+}
+#headMessage span{
+    font-size: 12px;
+}
+#headMessage span.arrow{
+    margin-left: 7px;
+}
+#headMessage li strong{
+    font-size: 12px;
+    color:#f22e00;
+}
+#headMessage li span.store{
+    font-size: 12px;
+    color:#f22e00;
+}
+#headMessage li.line{
+    font-size: 12px;
+    color: #ddd;
+    padding:0 5px;
+}
+
+
+/* 头部广告 */
+#headAd{
+    background-color: #f12f04;
+}
+#headAd .go{
+    display: block;
+    padding: 10px 10px 10px 15px;
+}
+#headAd .go img{
+    width:80px;
+    height: 80px;
+}
+#headAd ul{
+    padding-top: 13px;
+}
+#headAd li{
+     float: left;
+     width:209px;
+     height: 75px;
+     margin-right: 10px;
+     padding:12px 15px 0 15px;
+     box-sizing: border-box;/*IE盒模型（怪异盒模型）*/
+
+     /* 盒模型 
+                1.标准盒模型
+                     总宽度=border（左右）+width+padding（左右）
+                     总宽度=border（上下）+width+padding（上下）
+                2.IE盒模型
+                      总宽度=width；
+                      总高度+height；
+                 */
+}
+#headAd li h3{
+    font-size:20px;
+    line-height: 28px;
+}
+#headAd li p{
+    font-size: 14px;
+    line-height:20px;
+}
+#headAd li a{
+    color:#fff;
+    display: block;/*解决a标签不能点击的问题*/
+}
+#headAd li a img{
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+}
+
+#headAd li.item1{
+    background:url(../images/adbg_01.png) no-repeat;
+}
+#headAd li.item2{
+    background:url(../images/adbg_02.png) no-repeat;
+}
+#headAd li.item3{
+    background:url(../images/adbg_03.png) no-repeat;
+}
+#headAd li.item4{
+    background:url(../images/adbg_04.png) no-repeat;
+}
+#headAd li.item5{
+    background:url(../images/adbg_05.png) no-repeat;
+    margin-right: 0;
+}
+
+
+/* 头部搜索 */
+#headSearch{
+    background-color: #fff;
+    padding: 24px 0 10px 0 ;
+}
+#headSearch h1 a{
+    display:block;
+    width: 190px;
+    height:58px;
+    background:url(../images/logo.png) center no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding-top: 8px;
+}
+
+#headSearch .code{
+    width: 72px;
+    height:86px;
+    border: 1px solid #eee;
+    position:relative;
+    margin-right:110px;
+    text-align:center;
+}
+
+.#headSearch .code img{
+    width:62px;
+    height: 62px;
+
+}
+
+
+
+
+
+
+
+
